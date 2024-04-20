@@ -1,0 +1,156 @@
+body{
+    background-color: #e6a4b5b6;
+    font-family: "Scope One", serif;
+}
+
+.grid {   
+    display: grid;   
+    grid-template-columns: repeat(4, 1fr);   
+    grid-column-gap: 10px; 
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+         "nav nav nav nav"
+         "sidebar main main main"
+         "sidebar content1 content2 content3"
+         "sidebar footer footer footer";
+    grid-gap: 1rem;
+}
+
+nav{
+    color: palevioletred;
+    background-color: #ffefefc2;
+    border: 2px solid #89B9AD;
+    text-align: center;
+    font-size: 30px;
+    grid-area: nav;
+}
+
+
+h1 {
+    color:  palevioletred;
+    font-family: "Scope One", serif;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 20px;
+    margin: auto; 
+}
+
+#about-me {
+    color: #89B9AD;
+    font-family: "Tenor Sans", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+main{
+    background-color: #ffefefc2;
+    border: 6px dotted #89B9AD;
+    grid-area: main;
+}
+
+#sidebar{
+   background-color: #ffefefc2;
+   border: 6px dotted #89B9AD;
+   text-align: center;
+   grid-area: sidebar;
+}
+#nombre {
+    color:  palevioletred;
+    font-family: "Scope One", serif;
+    text-align: center;
+    font-size: 50px;
+    margin: auto; 
+
+}
+#descripción {
+    color:  #e6a4b5b6;
+    font-family: "Scope One", serif;
+    text-align: center;
+    font-size: 30px;
+    margin: auto; 
+}
+#lenguajes {
+    color: #EEA5A6;
+    font-family: "Tenor Sans", sans-serif;
+    text-align: center;
+    font-size: 25px;
+
+}
+li {
+    color: #EEA5A6;
+    font-family: "Tenor Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+#Proyectos {
+    color: #EEA5A6;
+    font-family: "Tenor Sans", sans-serif;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+#content1{
+   border: 3px solid #ffefefc2;
+    grid-area: content1;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#content2{
+    background-color: #ffefefc2;
+   border: 6px dotted #89B9AD;
+   text-align: center;
+    grid-area: content2;
+}
+h3 {
+    color:  palevioletred;
+    font-family: "Scope One", serif;
+    text-align: center;
+    font-size: 45px; 
+}
+
+
+#content3{
+    border: 3px solid #ffefefc2;
+    grid-area: content3;
+}
+
+footer{
+    background-color: #ffefefc2;
+   border: 6px dotted #89B9AD;
+    grid-area: footer
+}
+h4 {
+    color:  palevioletred;
+    font-family: "Scope One", serif;
+    text-align: left;
+    font-size: 20px;
+    margin: auto; 
+
+}
+
+@media only screen and (max-width:550px){
+    .container{
+    grid-template-columns:1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+    "nav"
+    "sidebar"
+    "main"
+    "content1"
+    "content2"
+    "content3"
+    "footer";
+    }
+    }
